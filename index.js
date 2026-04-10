@@ -1,9 +1,8 @@
+// Fixed code: Removed hardcoded password and empty blocks
 function calculateSum(a, b) {
-    if (a === b) {
-        // SonarQube will flag this empty block
-    }
     return a + b;
 }
 
-const password = "password123"; // SonarQube will flag hardcoded secrets
-console.log("Sum is: " + calculateSum(5, 10));
+const num1 = 5;
+const num2 = 10;
+console.log(`The sum of ${num1} and ${num2} is: ${calculateSum(num1, num2)}`);
